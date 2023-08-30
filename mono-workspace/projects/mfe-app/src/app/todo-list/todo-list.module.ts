@@ -12,13 +12,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    BrowserModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: TodoListComponent
-      }
-    ])
+    BrowserModule
   ]
 })
 export class TodoListModule { }

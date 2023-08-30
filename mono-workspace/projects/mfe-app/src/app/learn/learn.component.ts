@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
+@Component({
+  selector: 'app-learn',
+  templateUrl: './learn.component.html',
+  styleUrls: ['./learn.component.scss']
+})
+export class LearnComponent {
+  constructor(private router:Router, private route:ActivatedRoute){}
+
+  navigate(){
+    this.router.navigate(['learn/todo'])
+  }
+}

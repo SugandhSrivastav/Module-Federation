@@ -32,7 +32,7 @@ module.exports = {
         name: "mfeApp",
         filename: "remoteEntry.js",
         exposes: {
-            './TodoListModule': './projects/mfe-app/src/app/todo-list/todo-list.module.ts',
+            './SharedModule': './projects/mfe-app/src/app/shared.module.ts',
         },        
         
         // For hosts (please adjust)

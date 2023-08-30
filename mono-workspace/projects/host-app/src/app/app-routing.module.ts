@@ -9,13 +9,13 @@ const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {
-    path: 'todo-list', 
+    path: 'learn', 
     loadChildren: () => {
       return loadRemoteModule({
         remoteEntry: MFE_APP_URL,
         remoteName: "mfeApp",
-        exposedModule: "./TodoListModule"
-      }).then(m => m.TodoListModule).catch(err => console.log(err));
+        exposedModule: "./SharedModule"
+      }).then(m => m.SharedModule).catch(err => console.log(err));
     }
   }
 ];

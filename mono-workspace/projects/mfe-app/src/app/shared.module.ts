@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { TodoListModule } from './todo-list/todo-list.module';
 import { LearnComponent } from './learn/learn.component';
 import { RouterModule } from '@angular/router';
-import { TodoComponent } from 'projects/host-app/src/app/todo/todo.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { TodoComponent } from 'projects/host-app/src/app/todo/todo.component';
     BrowserModule,
     RouterModule.forChild([
         {path:"",component:LearnComponent,pathMatch:"full"},
-        {path:"learn/todo",component:TodoComponent}
+        {path:"todo",component:TodoListComponent}
     ])
   ],
   providers: [],
